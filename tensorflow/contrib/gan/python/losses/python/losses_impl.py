@@ -704,7 +704,7 @@ def least_squares_discriminator_loss(
   This loss comes from `Least Squares Generative Adversarial Networks`
   (https://arxiv.org/abs/1611.04076).
 
-  L = 1/2 * (D(x) - `real`) ** 2 +
+  L = 1/2 * (D(x) - `real_label`) ** 2 +
       1/2 * (D(G(z)) - `fake_label`) ** 2
 
   where D(y) are discriminator logits.
